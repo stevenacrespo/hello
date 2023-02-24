@@ -1,105 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <title>Steven Crespo</title>
 </head>
 
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td> <img src="david.png" alt="David's Profile Picture" width="100"> </td>
-            <td>
-                <h1>Steven Crespo</h1>
-                <p><em>Graduate of <strong><a href="https://uplb.edu.ph/main/">University of the Philippines - Los
-                                Baños</a></strong></em></p>
-                <p>I am a graduate of Computer Science from the University of the Philippines Los Baños</p>
-            </td>
-        </tr>
-    </table>
+    <div class="top-container">
+        <img class="top-cloud" src="./images/cloud.png" alt="cloud-img">
+        <h1>Steven David Crespo</h1>
+        <h2 class="programmer-text">Programmer</h2>
+        <img class="bottom-cloud" src="./images/cloud.png" alt="cloud-img">
+        <img src="./images/mountain.png" alt="mountain-img">
 
+    </div>
 
-    <hr>
-    <h3>Education</h3>
+    <div class="middle-container">
 
-    <ul>
-        <li>University of the Philippines Los Baños</li>
-    </ul>
+        <div class="profile">
+          <img class="profile-img"src="./images/david.jpg" alt="profile-photo">
+          <h2>👋 Hello</h2>
+          <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
 
-    <hr>
+        <hr>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="illustration-img" src="https://cdn-icons-png.flaticon.com/512/3199/3199899.png" alt="illustration-img">
+            <h3 class="skill-name">Illustration</h3>
+            <p class="illustration-img-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor ex et dignissim tempor. Maecenas sit amet viverra erat, quis scelerisque nibh.</p>
+          </div>
+          <div class="skill-row">
+            <img class="sing-img" src="https://cdn-icons-png.flaticon.com/512/5294/5294870.png" alt="singing-img">
+            <h3 class="skill-name">Singing</h3>
+            <p class="sing-img-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor ex et dignissim tempor. Maecenas sit amet viverra erat, quis scelerisque nibh.</p>
+          </div>
+        </div>
 
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-
-            </tr>
-        </tfoot>
-        <tr>
-            <td>Feb 2022 - Jun 2022</td>
-            <td>PrIME Information Security and Compliance Intern</td>
-        </tr>
-        <tr>
-            <td>Jun 2021 - Aug 2021</td>
-            <td>Flutter Developer Intern</td>
-        </tr>
-    </table>
-
-    <hr> 
-
-    <h3>Skills</h3>
-    <table cellspacing="10" >
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Coding</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Photography</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Listening</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Illustrating </td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <a href="hobbies.html">My Hobbies</a>
-            </td>
-            <td>
-                <a href="contact.html">Contact Me</a>
-            </td>
-            
-        </tr>
-    </table>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Let's work on something special.</h3>
+          <p>Send me an email.</p>
+          <a class="btn" href="mailto:stevenacrespo@gmail.com">CONTACT ME</a>
+        
+        </div>
+    </div>
+      
+      
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p class="copyright-text">© 2023 Steven David Crespo</p>
+    </div>
     
 </body>
-
 </html>
+
+<!-- 
+    Lesson Notes:
+
+    Display Type
+    - Block - Takes up the whole width, size can be changed
+    - Inline - Size cannot be changed, can be put in line
+    - Inline Block - Height and width can be changed, 
+
+    CSS Positions
+    - Static - default
+    - Relative - Static, but can add for example, relative to the element
+
+    position: relative
+    left: 30px
+    top, bottom, left, right:
+
+    Add "margin" from the left. Doesn't affect anything
+    else on the screen.
+
+    - Absolute Position - adding a margin to the parent, relative to the parent
+    - Fixed Position - Fixed Position on the screen.
+
+    Float or Clear only for wrapping text.
+    
+
+ -->
